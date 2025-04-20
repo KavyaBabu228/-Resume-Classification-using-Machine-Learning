@@ -1,4 +1,4 @@
-# -Resume-Classification-using-Machine-Learning
+# Resume-Classification-using-Machine-Learning
 
 This project aims to develop a robust machine learning solution to automatically classify resumes into predefined job categories. The system is designed to streamline the recruitment process by reducing manual screening time, increasing accuracy in candidate matching, and improving the overall efficiency of hiring workflows.
 
