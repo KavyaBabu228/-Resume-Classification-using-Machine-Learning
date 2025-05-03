@@ -1,86 +1,95 @@
-# Resume-Classification-using-Machine-Learning
+# 📄 Resume Classification using Machine Learning
 
 This project aims to develop a robust machine learning solution to automatically classify resumes into predefined job categories. The system is designed to streamline the recruitment process by reducing manual screening time, increasing accuracy in candidate matching, and improving the overall efficiency of hiring workflows.
 
-📌 Objective
+---
+
+## 📌 Objective
+
 The objective is to build an end-to-end automated pipeline that:
 
-Cleans and processes raw resume data.
+- Cleans and processes raw resume data  
+- Extracts meaningful features using NLP techniques  
+- Trains and evaluates multiple machine learning models  
+- Optimizes performance through hyperparameter tuning  
+- Deploys the best model as a web application for real-time classification  
 
-Extracts meaningful features using natural language processing techniques.
+---
 
-Trains and evaluates multiple machine learning models to classify resumes accurately.
+## 🔍 Exploratory Data Analysis (EDA)
 
-Optimizes model performance through hyperparameter tuning.
+A comprehensive EDA was conducted to understand the structure and content of the resume dataset:
 
-Deploys the best-performing model as an interactive web application for real-time classification.
+- Analyzed class imbalances and text length variations  
+- Explored frequency of keywords, job titles, and skills  
+- Applied text normalization, stopword removal, and lemmatization  
+- Created visualizations to support feature engineering decisions  
 
-🔍 Exploratory Data Analysis (EDA)
-A comprehensive exploratory data analysis was conducted to understand the distribution, patterns, and structure of the resume dataset. This included:
+---
 
-Analysis of class imbalances and text length variations.
+## 🧠 Model Development
 
-Frequency distributions of keywords, job titles, and skills.
+Multiple classification algorithms were tested and compared:
 
-Text normalization, stopword removal, and lemmatization to prepare the data for modeling.
+- Models: Logistic Regression, Naive Bayes, SVM, Random Forest  
+- Feature extraction: TF-IDF Vectorization  
+- Evaluation metrics: Accuracy, Precision, Recall, F1-Score, Confusion Matrix  
+- Cross-validation was used for model selection and performance comparison  
 
-Visualizations to uncover patterns and support feature engineering decisions.
+---
 
-🧠 Model Development
-Multiple classification algorithms were explored, including Logistic Regression, Naive Bayes, Support Vector Machines, and Random Forests. Key highlights include:
+## 🔧 Hyperparameter Tuning
 
-Feature extraction using Term Frequency–Inverse Document Frequency (TF-IDF).
+Model performance was optimized using:
 
-Comparison of model performance using cross-validation.
+- `GridSearchCV` for exhaustive search  
+- `RandomizedSearchCV` for probabilistic search  
+- Manual tuning of thresholds and TF-IDF parameters  
 
-Evaluation metrics such as accuracy, precision, recall, F1-score, and confusion matrix.
+This significantly improved model performance and reduced overfitting.
 
-Selection of the best-performing model based on both performance and generalizability.
+---
 
-🔧 Hyperparameter Tuning
-Hyperparameter tuning was applied to refine model performance using methods such as:
+## 🚀 Deployment
 
-GridSearchCV for exhaustive search.
+The best-performing model was deployed as a web app using **[Streamlit or Flask]**.
 
-RandomizedSearchCV for faster, probabilistic tuning.
+### Features:
 
-Manual experimentation to fine-tune threshold settings and vectorization parameters.
+- Clean UI to upload resumes (text or PDF)  
+- Backend processing: text cleaning, vectorization, classification  
+- Real-time prediction of job category  
+- Ready for deployment on Heroku, Render, or Streamlit Cloud  
 
-This step significantly improved model accuracy and reduced overfitting.
+---
 
-🚀 Deployment
-To enable real-time, user-friendly interaction with the model, a web application was developed and deployed using [choose: Streamlit or Flask]. Key deployment features include:
+## ✅ Project Outcomes
 
-A clean UI allowing users to upload resume files (text or PDF).
+- Built a complete ML pipeline from EDA to deployment  
+- Achieved high classification accuracy  
+- Deployed a fully functional web app for HR and recruitment use cases  
 
-Backend processing to clean, vectorize, and classify the input using the trained model.
+---
 
-Instant feedback with the predicted job category.
+## 🧰 Technologies & Tools
 
-Deployment readiness for both local hosting and cloud platforms like Heroku, Render, or Streamlit Cloud.
+- **Programming**: Python  
+- **Libraries**: `pandas`, `numpy`, `scikit-learn`, `nltk`, `matplotlib`, `seaborn`  
+- **Deployment**: Streamlit / Flask  
+- **Environment**: Jupyter Notebook, Git  
 
-✅ Project Outcomes
-Developed an end-to-end machine learning pipeline from data ingestion to deployment.
+---
 
-Achieved high classification accuracy with the selected model.
+## 📈 Future Enhancements
 
-Successfully deployed a functional web application for practical use cases in HR tech or recruitment platforms.
+- Integrate transformer-based models (BERT, RoBERTa)  
+- Enable multi-label classification for multi-domain resumes  
+- Add PDF parsing and structured extraction support  
+- Containerize using Docker and set up CI/CD pipelines for production readiness  
 
-🧰 Technologies & Tools
-Programming Language: Python
+---
 
-Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, nltk
+## 🙋‍♀️ Author
 
-Deployment: Streamlit / Flask
-
-Environment: Jupyter Notebook, Git
-
-📈 Future Enhancements
-Implement deep learning-based NLP models such as BERT or RoBERTa for improved contextual understanding.
-
-Extend to multi-label classification for resumes applicable to multiple job categories.
-
-Add PDF parsing for diverse resume formats and structured outputs.
-
-Deploy using Docker and CI/CD pipelines for scalable and production-ready services.
-
+**Kavya Babu**  
+[LinkedIn](https://www.linkedin.com/in/kavya-babu-15a36a2b5/)  
